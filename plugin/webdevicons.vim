@@ -217,7 +217,7 @@ function! s:setDictionaries()
         \ 'cc'       : '',
         \ 'cp'       : '',
         \ 'c'        : '',
-        \ 'cs'       : '',
+        \ 'cs'       : '',
         \ 'h'        : '',
         \ 'hh'       : '',
         \ 'hpp'      : '',
@@ -278,15 +278,22 @@ function! s:setDictionaries()
         \ 'tsx'      : '',
         \ 'jl'       : '',
         \ 'pp'       : '',
-        \ 'vue'      : '﵂',
+        \ 'vue'      : '',
         \ 'elm'      : '',
         \ 'swift'    : '',
         \ 'xcplayground' : '',
-        \ 'tex'      : 'ﭨ',
-        \ 'r'        : 'ﳒ',
-        \ 'rproj'    : '鉶',
-        \ 'sol'      : 'ﲹ',
-        \ 'pem'      : ''
+        \ 'tex'      : '',
+        \ 'typ'      : '',
+        \ 'r'        : '',
+        \ 'rproj'    : '',
+        \ 'sol'      : '󰡪',
+        \ 'pem'      : '',
+        \ 'F'        : '󱈚',
+        \ 'f'        : '󱈚',
+        \ 'F03'      : '󱈚',
+        \ 'for'      : '󱈚',
+        \ 'csv'      : '',
+        \ 'm'        : ''
         \}
 
   let s:file_node_exact_matches = {
@@ -571,7 +578,7 @@ function! WebDevIconsGetFileFormatSymbol(...)
   endif
 
   if &fileformat ==? 'dos'
-    let fileformat = ''
+    let fileformat = ''
   elseif &fileformat ==? 'unix'
     let fileformat = s:isDarwin() ? '' : s:getDistro()
   elseif &fileformat ==? 'mac'
