@@ -3,6 +3,9 @@ CHANGELOG
 ================================================================================
 This project is using [Semantic Versioning 2.0.0](http://semver.org/)
 
+- v0.11.1
+  - Fixed broken codepoints in Nerd Fonts ≥ 3.0.0 (@msmiecho)
+  - Added Fortran, Matlab, Typst, CSV filetypes support (@msmiecho)
 - v0.11.0
   - Added Docker filetypes support (PR #228) (@IngoHeimbach)
   - Added Swift filetypes support (PR #252) (@motform)
